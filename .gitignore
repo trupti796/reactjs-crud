@@ -1,0 +1,9 @@
+# Node modules
+/frontend/node_modules/
+
+# React build (optional)
+/frontend/dist/
+
+# Env and PHP secrets
+.env
+/backend/config.php
