@@ -41,7 +41,7 @@ reactjs-crud/
 | Backend      | PHP (MySQLi)       |
 | Frontend     | React.js with Vite |
 | Database     | MySQL              |
-| Styling      | ailwind CSS        |
+| Styling      | Tailwind CSS        |
 | Version Ctrl | Git + GitHub       |
 
 ---
