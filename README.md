@@ -128,39 +128,45 @@ You will see a form to add users and a list to display them.
 
 ---
 
-🤔 Decisions & Assumptions
-📌 Decisions Made
-Tech Stack Chosen:
-Used Core PHP with MySQLi for the backend and React.js with Vite for the frontend to showcase full-stack capability using minimal frameworks.
+## 📌 Decisions & 💡 Assumptions
 
-Database Schema Design:
-Kept the tbl_users table simple with fields: id, name, email, password, plain_password, and dob to cover typical CRUD operations.
+---
 
-Password Handling:
+### ✅ **Decisions Made**
 
-Used PHP's password_hash() for securely storing passwords.
+1. 🧱 **Tech Stack**  
+   Used **Core PHP (MySQLi)** for backend and **React.js (Vite)** for frontend to showcase a lightweight full-stack app without advanced frameworks.
 
-Stored plain_password temporarily for display/testing purposes (in real-world projects, this would not be done).
+2. 🗂️ **API Structure**  
+   Followed a REST-like structure using separate PHP files:  
+   `create.php`, `read.php`, `update.php`, `delete.php`.
 
-API Communication:
-Chose to keep the API structure RESTful (create.php, read.php, update.php, delete.php) for clarity and separation of concerns.
+3. 🔐 **Password Handling**  
+   - Stored hashed passwords using `password_hash()` for security.  
+   - Also stored plain password temporarily in `plain_password` field **only for testing** (not recommended in production).
 
-Form Validation:
-Frontend form has basic validation for email, required fields, and password match.
+4. 🧪 **Form Validation**  
+   - Client-side validation included for required fields, email format, and password match.  
+   - Server-side validation handled in PHP scripts.
 
-Styling:
-Used minimal Tailwind CSS and utility classes for a clean and responsive UI without external UI libraries.
+5. 🎨 **Styling Choice**  
+   Used **Tailwind CSS** for layout, form, and alert styles to keep UI responsive and clean without installing UI libraries.
 
-💡 Assumptions
-The app is intended for local development/demo purposes, not production use.
+6. 🔄 **State Management**  
+   Basic React useState hooks used for form and user list state.
 
-User roles, authentication, and authorization are out of scope for this project.
+---
 
-The user email must be unique and is treated as a key identifier apart from ID.
+### 🤔 **Assumptions Made**
 
-Backend is hosted on http://localhost/backend/ – this may need adjustment in production.
+1. 🌐 The backend will run at `http://localhost/backend/` during development.
 
-Deletion is soft (confirmation required) but is not reversible.
+2. 🔐 User email must be unique in the database and acts as a user identifier.
+
+3. 🧑‍💻 This app is for **local demo/testing only** — not optimized for production security or performance.
+
+4. ❌ Deletion is permanent from database, although confirmation dialog is included.
+
 
 ## 🚀 Upcoming
 
