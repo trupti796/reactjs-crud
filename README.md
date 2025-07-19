@@ -1,4 +1,4 @@
-# User CRUD App – Core PHP (MySQLi) + React.js + MySQL
+# User CRUD App – Core PHP + React.js + MySQL
 
 ![Preview Screenshot](preview.png)
 
