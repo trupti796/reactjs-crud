@@ -128,6 +128,40 @@ You will see a form to add users and a list to display them.
 
 ---
 
+🤔 Decisions & Assumptions
+📌 Decisions Made
+Tech Stack Chosen:
+Used Core PHP with MySQLi for the backend and React.js with Vite for the frontend to showcase full-stack capability using minimal frameworks.
+
+Database Schema Design:
+Kept the tbl_users table simple with fields: id, name, email, password, plain_password, and dob to cover typical CRUD operations.
+
+Password Handling:
+
+Used PHP's password_hash() for securely storing passwords.
+
+Stored plain_password temporarily for display/testing purposes (in real-world projects, this would not be done).
+
+API Communication:
+Chose to keep the API structure RESTful (create.php, read.php, update.php, delete.php) for clarity and separation of concerns.
+
+Form Validation:
+Frontend form has basic validation for email, required fields, and password match.
+
+Styling:
+Used minimal Tailwind CSS and utility classes for a clean and responsive UI without external UI libraries.
+
+💡 Assumptions
+The app is intended for local development/demo purposes, not production use.
+
+User roles, authentication, and authorization are out of scope for this project.
+
+The user email must be unique and is treated as a key identifier apart from ID.
+
+Backend is hosted on http://localhost/backend/ – this may need adjustment in production.
+
+Deletion is soft (confirmation required) but is not reversible.
+
 ## 🚀 Upcoming
 
 - 🔐 User login/auth
